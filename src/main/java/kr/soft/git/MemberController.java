@@ -6,9 +6,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
+
 public class MemberController {
+    @GetMapping("/jb")
+    public void jb(){
+        log.info("jb");
+    }
+
     @GetMapping("/BBB")
     public void BBB(){
       log.info("BBB");
     }
+
 }
