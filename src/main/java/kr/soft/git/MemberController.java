@@ -1,14 +1,22 @@
 package kr.soft.git;
 
-import org.springframework.http.ResponseEntity;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Slf4j
 @RestController
 public class MemberController {
+
     @GetMapping("/d")
     public void getD() {
         System.out.println("dddddd");
+    }
+
+
+    @GetMapping("/BBB")
+    public void BBB(){
+      log.info("BBB");
     }
 
 }
