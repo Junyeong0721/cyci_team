@@ -8,6 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 
 public class MemberController {
+
+
+    @GetMapping("/d")
+    public void getD() {
+        System.out.println("dddddd");
+    }
+
+
+
     @GetMapping("/jb")
     public void jb(){
         log.info("jb");
@@ -17,5 +26,4 @@ public class MemberController {
     public void BBB(){
       log.info("BBB");
     }
-
 }
